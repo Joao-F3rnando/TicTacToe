@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    /*Serve Para esconder o "tabuleiro"*/
+    display: none !important;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.header-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-names {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-names input {
+    width: 150px;
+    height: 30px;
+    padding: 0 5px 0;
+    font-size: 20px;
+}
+
+.input-names div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-button button {
+    margin-top: 30px;
+    height: 80px;
+    width: 200px;
+    font-size: 24px;
+}
+
+#display-text {
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+main button {
+    width: 150px;
+    height: 150px;
+    font-size: 8rem;
+    display: grid;
+    place-content: center;
+}
+
+@keyframes buttonWinner {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.buttonWinner {
+    background-color: green;
+    color: #fff;
+    -webkit-animation: buttonWinner .9s linear infinite;
+    -moz-animation: buttonWinner .9s linear infinite;
+    -ms-animation: buttonWinner .9s linear infinite;
+    -o-animation: buttonWinner .9s linear infinite;
+    animation: buttonWinner .9s linear infinite;
+}
+
+.restart-button {
+    display: flex;
+    justify-content: center;
+}
+
+.restart-button button {
+    margin-top: 30px;
+    height: 80px;
+    width: 250px;
+    font-size: 24px;
+}
+
+.winnersList {
+    padding-top: 40px;
+    text-align: center;
+}

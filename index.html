@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo TicTacToe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="header-content">
+        <header>
+            <h1>TicTacToe by João Fernando</h1>
+            <div class="input-names">
+                <div class="inputPlayer1">
+                    <label for="player1">Nome do Player1 (X)</label>
+                    <input type="text" name="player1" id="player1" autocomplete=off>
+                </div>
+                <div class="inputPlayer2">
+                    <label for="player2">Nome do Player2 (O)</label>
+                    <input type="text" name="player2" id="player2" autocomplete="off">
+                </div>
+            </div>
+            <div class="start-button">
+                <button onclick="start()">Iniciar</button>
+            </div>
+        </header>
+    </div>
+    <main class="main-content block">
+        <label id="display-text"></label>
+        <div>
+            <button class="buttonPosition" data-value="1"></button>
+            <button class="buttonPosition" data-value="2"></button>
+            <button class="buttonPosition" data-value="3"></button>
+        </div>
+        <div>
+            <button class="buttonPosition" data-value="4"></button>
+            <button class="buttonPosition" data-value="5"></button>
+            <button class="buttonPosition" data-value="6"></button>
+        </div>
+        <div>
+            <button class="buttonPosition" data-value="7"></button>
+            <button class="buttonPosition" data-value="8"></button>
+            <button class="buttonPosition" data-value="9"></button>
+        </div>
+    </main>
+    <div class="restart-button block">
+        <button onclick="restart()">Jogar Novamente?</button>
+    </div>
+</body>
+
+</html>
